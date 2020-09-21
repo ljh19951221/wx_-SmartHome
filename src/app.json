@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/main",
     "pages/logs/main",
-    "pages/counter/main"
+    "pages/scene/main",
+    "pages/my/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,25 +20,34 @@
     "list": [{
       "text": "首页",
       "pagePath": "pages/index/main",
-      "iconPath": "static/tabs/home.png",
-      "selectedIconPath": "static/tabs/home-active.png"
+      "iconPath": "static/tabs/std_tab_icon_my_device_normal.png",
+      "selectedIconPath": "static/tabs/std_tab_icon_my_device_selected.png"
     }, {
-      "text": "订单",
-      "pagePath": "pages/logs/main",
-      "iconPath": "static/tabs/orders.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
+      "text": "智能",
+      "pagePath": "pages/scene/main",
+      "iconPath": "static/tabs/std_tab_icon_scene_normal.png",
+      "selectedIconPath": "static/tabs/std_tab_icon_scene_selected.png"
+    }, {
+      "text": "我的",
+      "pagePath": "pages/my/main",
+      "iconPath": "static/tabs/std_tab_icon_my_centernormal.png",
+      "selectedIconPath": "static/tabs/std_tab_icon_my_center_selected.png"
     }],
-
     "items": [{
       "name": "首页",
       "pagePath": "pages/index/main",
-      "icon": "static/tabs/home.png",
-      "activeIcon": "static/tabs/home-active.png"
+      "iconPath": "static/tabs/std_tab_icon_my_device_normal.png",
+      "selectedIconPath": "static/tabs/std_tab_icon_my_device_selected.png"
     }, {
-      "name": "订单",
-      "pagePath": "pages/logs/main",
-      "icon": "static/tabs/orders.png",
-      "activeIcon": "static/tabs/orders-active.png"
+      "name": "智能",
+      "pagePath": "pages/scene/main",
+      "iconPath": "static/tabs/std_tab_icon_scene_normal.png",
+      "selectedIconPath": "static/tabs/std_tab_icon_scene_selected.png"
+    },{
+      "name": "我的",
+      "pagePath": "pages/my/main",
+      "iconPath": "static/tabs/std_tab_icon_my_centernormal.png",
+      "selectedIconPath": "static/tabs/std_tab_icon_my_center_selected.png"
     }],
     "position": "bottom"
   }
