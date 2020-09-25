@@ -8,5 +8,15 @@ Vue.config.errorHandler = function (err) {
   }
 }
 
+
+
+//引入colorUI样式
+// import '../../../static/colorui/animation.css'
+// import '../../../static/colorui/animation.css'
+// import '../../../static/colorui/animation.css'
+
+// import cuCustom from '../../../static/colorui/components/cu-custom.vue'
+// Vue.component('cu-custom',cuCustom)
+
 const app = new Vue(App)
 app.$mount()

@@ -7,16 +7,15 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#A7A3A0",
+    "navigationBarTitleText": "Smart Home",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#999",
     "backgroundColor": "#fafafa",
-    "selectedColor": "#333",
+    "selectedColor": "#00BC9C",
     "borderStyle": "white",
-
     "list": [{
       "text": "首页",
       "pagePath": "pages/index/main",
