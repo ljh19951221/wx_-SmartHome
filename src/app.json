@@ -31,23 +31,6 @@
       "pagePath": "pages/my/main",
       "iconPath": "static/tabs/std_tab_icon_my_centernormal.png",
       "selectedIconPath": "static/tabs/std_tab_icon_my_center_selected.png"
-    }],
-    "items": [{
-      "name": "首页",
-      "pagePath": "pages/index/main",
-      "iconPath": "static/tabs/std_tab_icon_my_device_normal.png",
-      "selectedIconPath": "static/tabs/std_tab_icon_my_device_selected.png"
-    }, {
-      "name": "智能",
-      "pagePath": "pages/scene/main",
-      "iconPath": "static/tabs/std_tab_icon_scene_normal.png",
-      "selectedIconPath": "static/tabs/std_tab_icon_scene_selected.png"
-    },{
-      "name": "我的",
-      "pagePath": "pages/my/main",
-      "iconPath": "static/tabs/std_tab_icon_my_centernormal.png",
-      "selectedIconPath": "static/tabs/std_tab_icon_my_center_selected.png"
-    }],
-    "position": "bottom"
+    }]
   }
 }
