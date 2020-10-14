@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/logs/main",
     "pages/scene/main",
     "pages/my/main"
   ],

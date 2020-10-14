@@ -61,6 +61,20 @@
 					"id": -1,
 					"name": "pages/index/main",
 					"pathName": "pages/index/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "智能",
+					"pathName": "pages/scene/main",
 					"scene": null
 				}
 			]
