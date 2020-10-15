@@ -20,7 +20,7 @@
 
       <div class="main-content">
         <div class="room-list">
-        <i-tab-bar :current="currentInfo" color="#00BC9C" @change="handleChange()">
+        <i-tab-bar :current="currentInfo" color="#00BC9C" @ichange="handleChange($event)">
           <i-tab-bar-item key="common" icon="collection" current-icon="collection_fill" title="常用"></i-tab-bar-item>
           <i-tab-bar-item key="bedroom" icon="clock" current-icon="clock_fill" title="卧室"></i-tab-bar-item>
           <i-tab-bar-item key="living" icon="homepage" current-icon="homepage_fill" title="客厅"></i-tab-bar-item>
@@ -32,18 +32,20 @@
 
       <div class="room-device">
         <div style="border: 0 solid #e9eaec; border-bottom-width: 1px;">
-          <view
+          <div
             style="padding-left:12px;padding-top:12px;padding-bottom:12px;font-size: 16px;color: #666666;display: inline-block">
             <span>{{currentRoom}}</span>
-          </view>
-          <view style="font-size: 10px;margin-left: 5px;color: #999999;display: inline-block">
+          </div>
+          <div style="font-size: 10px;margin-left: 5px;color: #999999;display: inline-block">
             <span>{{deviceList.length}}个设备</span>
-          </view>
+          </div>
         </div>
+        <i-cell v-for="item in deviceList" :key="item.value" :icon="feedback_fill" :title="item.title" :label="item.label">        
+          <i-avatar :src="item.image" slot="icon"/>
+          <i-switch v-if="item.isSwitch"  :value="item.value" @change="handleChangeDevice(item)" slot="footer"> </i-switch>
+        </i-cell>
 
-        
-      </div>
-
+      </div>          
       </div>
     <i-message id="message" />
   </div>
@@ -73,11 +75,14 @@ export default {
   components: {
     card
   },
-
+  created () {
+    this.handleChange(event);
+  },
   methods: {
-    handleChange(data){
-        if (data) {
-        this.currentInfo = data.mp.detail.key
+    handleChange(event){
+      console.log("handleChange --data",event);
+        if (event) {
+        this.currentInfo = event.mp.detail.key
         } else {
           this.currentInfo = 'common'
         }
@@ -90,41 +95,41 @@ export default {
        let deviceList = [
         {
           title: '智能灯泡',
-          image: '/static/image/device_list_yeelight_real.png',
+          image: '/static/images/device_list_yeelight_real.png',
           isSwitch: true,
           label: '已开灯',
           value: true
         },
         {
           title: '米家台灯',
-          image: '/static/image/pms1.jpg',
+          image: '/static/images/pms1.jpg',
           isSwitch: true,
           label: '已关灯',
           value: false
         },
         {
           title: '米家电饭煲',
-          image: '/static/image/pms2.png',
+          image: '/static/images/pms2.png',
           label: '设备在线'
         },
         {
           title: '小米空气净化器',
-          image: '/static/image/pms3.png',
+          image: '/static/images/pms3.png',
           label: '设备离线'
         },
         {
           title: '米家扫地机器人',
-          image: '/static/image/pms4.jpg',
+          image: '/static/images/pms4.jpg',
           label: '设备在线'
         },
         {
           title: '米家恒温电水壶',
-          image: '/static/image/pms5.jpg',
+          image: '/static/images/pms5.jpg',
           label: '设备在线'
         },
         {
           title: '小米盒子3',
-          image: '/static/image/pms6.jpg',
+          image: '/static/images/pms6.jpg',
           label: '热播大片:归去来'
         }
       ]
