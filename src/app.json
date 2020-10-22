@@ -7,41 +7,38 @@
     "pages/my/main"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#A7A3A0",
-    "navigationBarTitleText": "Smart Home",
-    "navigationBarTextStyle": "white"
+    "navigationStyle": "custom"
   },
   "tabBar": {
-    "color": "#999",
+    "color": "#e9dfe5",
     "backgroundColor": "#fafafa",
-    "selectedColor": "#e9dfe5",
+    "selectedColor": "#999",
     "borderStyle": "white",
     "list": [{
       "text": "米家",
       "pagePath": "pages/mijia/main",
-      "iconPath": "static/tabs/mijia.png",
-      "selectedIconPath": "static/tabs/s_mijia.png"
+      "iconPath": "static/tabs/s_mijia.png",
+      "selectedIconPath": "static/tabs/mijia.png"
     }, {
       "text": "有品",
       "pagePath": "pages/youpin/main",
-      "iconPath": "static/tabs/youping.png",
-      "selectedIconPath": "static/tabs/s_youping.png"
+      "iconPath": "static/tabs/s_youping.png",
+      "selectedIconPath": "static/tabs/youping.png"
     },  {
       "text": "内容",
       "pagePath": "pages/content/main",
-      "iconPath": "static/tabs/neirong.png",
-      "selectedIconPath": "static/tabs/s_neirong.png"
+      "iconPath": "static/tabs/s_neirong.png",
+      "selectedIconPath": "static/tabs/neirong.png"
     },  {
       "text": "智能",
       "pagePath": "pages/zhineng/main",
-      "iconPath": "static/tabs/zhineng.png",
-      "selectedIconPath": "static/tabs/s_zhineng.png"
+      "iconPath": "static/tabs/s_zhineng.png",
+      "selectedIconPath": "static/tabs/zhineng.png"
     }, {
       "text": "我的",
       "pagePath": "pages/my/main",
-      "iconPath": "static/tabs/wode.png",
-      "selectedIconPath": "static/tabs/s_wode.png"
+      "iconPath": "static/tabs/s_wode.png",
+      "selectedIconPath": "static/tabs/wode.png"
     }]
   }
 }
