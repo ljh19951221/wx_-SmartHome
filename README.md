@@ -3,13 +3,10 @@
 > 智能家居界面
 
 ## 显示效果
---- 首页 ---
-<img src="/view/首页效果.gif" width = "400" alt="首页效果"/>
 
---- 智能 ---
 
 ## 踩坑记录
-10/15 --tabbar (change函数获取的参数为undefined)
+
 
 ## Build Setup
 

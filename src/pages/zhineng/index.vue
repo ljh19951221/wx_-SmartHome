@@ -1,6 +1,6 @@
 <template>
   <div>
-    我的
+    智能
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    我的
+  <div class="home-container">
+    米家
   </div>
 </template>
 
